@@ -1,3 +1,7 @@
+:root {
+  --bgColor-main: #000000;
+}
+
 * {
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -5,7 +9,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--bgColor-main);
   margin: 0 auto;
 }
 
@@ -16,4 +20,34 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+#inputArea {
+  text-align: right !important;
+  font-size: 3.5rem;
+}
+
+td {
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-radius: 32.5px;
+}
+
+td:active {
+  transform: scale(0.95);
+}
+
+.grey {
+  background-color: #a5a5a5;
+  color: #000000;
+}
+
+.orange {
+  background-color: #fe9e06;
+}
+
+.blackGrey {
+  background-color: #333333;
 }
